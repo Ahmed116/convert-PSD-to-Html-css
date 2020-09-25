@@ -416,3 +416,70 @@ a {
     text-transform: uppercase;
     margin-bottom: 0;
 }
+
+
+/* Anemation */
+
+.main-menu li{
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+
+}
+
+.main-menu li:hover{
+  background: #6a3144;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+
+.content{
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0%   {left: -1000px;}
+  100% {left: 0;}
+}
+
+
+.search-area input[type="submit"]{
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.search-area input[type="submit"]:hover{
+  transform: rotateY(180deg);
+}
+
+@keyframes btn {
+  0%   {opacity:0}
+  100% {opacity: 1}
+}
+
+.read-more{
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.read-more:hover{
+  transform: rotateY(180deg);
+}
+
+.logo-area img{
+  position: relative;
+  animation: img;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img {
+  0%   {top: -50px;}
+  100% {top: 5px;}
+}
